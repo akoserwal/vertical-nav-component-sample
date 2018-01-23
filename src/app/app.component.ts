@@ -240,11 +240,6 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  toggleExample(): void {
-    this.showExample = !this.showExample;
-    this.chRef.detectChanges();
-  }
-
   onItemClicked($event: NavigationItemConfig): void {
     this.actionText += 'Item Clicked: ' + $event.title + '\n';
   }

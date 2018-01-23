@@ -1,7 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 
-<div id="verticalNavLayout" class="layout-pf layout-pf-fixed faux-layout" style="background-color: white;"
-     *ngIf="showExample">
+<div id="verticalNavLayout" class="layout-pf layout-pf-fixed faux-layout" style="background-color: white;">
   <pfng-vertical-navigation
       [brandAlt]="'PatternFly Ng'"
       [hiddenIcons]="false"
@@ -13,9 +12,6 @@
       (onItemClickEvent)="onItemClicked($event)"
       (onNavigationEvent)="onNavigation($event)">
     <div>
-      <ul class="nav navbar-nav">
-        <li><button id="hideVerticalNavWithRouter" (click)="toggleExample()" class="hide-vertical-nav">Exit Vertical Navigation Demo</button></li>
-      </ul>
       <ul class="nav navbar-nav navbar-right navbar-iconic">
         <li class="dropdown">
         </li>
@@ -55,21 +51,6 @@
       <div class="col-sm-12">
         <textarea rows="3" class="col-sm-12">{{actionText}}</textarea>
         <router-outlet></router-outlet>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="padding-15" *ngIf="!showExample">
-  <div class="row">
-    <div class="col-sm-12">
-      <h4>Vertical Navigation Component Example</h4>
-      <hr/>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="form-group">
-        <button (click)="toggleExample()">Toggle example</button>
       </div>
     </div>
   </div>
